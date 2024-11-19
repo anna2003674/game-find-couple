@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Найди пару</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <hr />
+      <h1>Найди пару!</h1>
+      <hr />
+      <p class="sr-text">Жизни: <span id="lives" class="sr-text"></span></p>
+      <div id="gameBoard" class="game-board"></div>
+      <button class="btn" id="startGame">Заново</button>
+      <button class="btn" id="rulesButton">Правила</button>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2 class="sr-text-gothic">Правила</h2>
+        <p class="little-text">
+          1. Открывай карту<br />2. Открывай вторую<br />3. Запоминай!
+        </p>
+      </div>
+    </div>
+    <div id="endModal" class="modal">
+      <div class="modal-content">
+        <span id="closeEndModal" class="close">&times;</span>
+        <h2 class="sr-text-gothic">Игра завершена!</h2>
+        <p id="gameResult" class="little-text"></p>
+        <button id="restartButton" class="button2">Заново</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

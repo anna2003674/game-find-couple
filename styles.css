@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff0f5;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Franklin Gothic Medium";
+  font-size: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+hr {
+  border-width: 2px;
+  border-color: #2196f3;
+  margin-bottom: 0px;
+}
+
+.game-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.sr-text {
+  font-size: 30px;
+}
+
+.sr-text-gothic {
+  font-family: "Franklin Gothic Medium";
+  font-size: 40px;
+  text-align: center;
+}
+
+.little-text {
+  font-size: 26px;
+  margin-left: 100px;
+}
+
+.little-text2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.button2 {
+  margin-left: 200px;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: transparent;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+.card.opened {
+  background-color: #fff0f5;
+  color: black;
+}
+
+.card.matched {
+  background-color: #4caf50;
+}
+
+.btn {
+  margin: 20px 0px 0px;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #0b7dda;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  margin: 15% auto;
+  width: 500px;
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#restartButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#restartButton:hover {
+  background-color: #45a049;
+}
